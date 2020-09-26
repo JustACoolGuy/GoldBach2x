@@ -1,4 +1,4 @@
 # GoldBach2x
-Class 2022 HS Student made Goldbach project I made in 1 hour. Will all pairs of numbers (If you know what Goldbach is I don't have to explain). It will print ALL pairs. For instance (5+3) and (3+5) are recognized as two different pairs in the technical sense.
+Goldbach project made in 1 hour. Will all pairs of numbers (If you know what Goldbach is I don't have to explain). It will print ALL pairs. For instance (5+3) and (3+5) are recognized as two different pairs in the technical sense.
 
--Maluchi Ugokwe Jr.
+-Maluchi Ugokwe Jr. HS Class 2022
