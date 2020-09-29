@@ -1,14 +1,7 @@
 import math
 from math import*
-#Made by me, Maluchi Ugokwe Jr./Baphomet(Discord Name)
-#Amped Ante , Luminary , Wickedness (My In-Game names)
-
-#"reqn" is only a state of being, it's only an integer for the sake of ease
-#it has no other practical application to the code other than that
 
 reqn = 3
-
-#While Loop checks if number meets the conditions for the Goldbach Conjecture
 
 while True:
     x = int(input("Enter the number given:\n"))
@@ -24,18 +17,10 @@ while True:
 z = str(x)
 print( z + " is a sum of two primes.")
 
-#First list as a range of 1 to my input
-
 list1 = list(range(1,x))
 list1_str = str(list1)
 
-#Prettiness while in the cmd/terminal "..." doesn't have any function
-
 print("...")
-
-#Empty list will have values appended to it soon
-#Any value that isn't composite will be added to the end of list 2 as per the definition of append
-#The values have to meet the condition of >1 before this happens
 
 list2 = []
 for i in list1:
@@ -49,13 +34,11 @@ for i in list1:
 
 
 finalstrike = list2
-
 negstrike = [ -x for x in finalstrike]
-#Makes all numbers negative and assigns this new list to the list "negstrike"
-#Next all numbers will be added to my input "x" (the actual input, dont be confused by the semantics)
+
 negstrike = [num + x for num in negstrike]
 
-#Removes numbers divisible by 2 from my new list
+
 for i in negstrike:
     if (i%2 == 0):
         negstrike.remove(i)
@@ -64,15 +47,19 @@ for i in negstrike:
 
 negstrike.append(2)
 
-#If my input -i is j(a prime number) I will print i and j because we've made sure
-#they are both prime
+
 for j in (negstrike):
     if j%2 == 0:
         negstrike.remove(j)
     for i in negstrike:
         if x - i == j:
             print(str(i), str(j))
-#4 was a special case for this code, I made an exception here
+            for i in (negstrike):
+                if i == j:
+                    negstrike.remove(j)
+                
+#exceptions (special cases in my algorithm)
 if x == 4:
     print (str(2), str(2))
-    
+if x == 10:
+    print(str(5), str(5))    
